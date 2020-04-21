@@ -1,0 +1,17 @@
+.NavBar {
+    width:100%;
+    padding: 1rem 0.5rem;
+    background-color:rebeccapurple;
+    box-shadow: 1px 3px 1px black;
+}
+
+.NavBar a {
+    color:#FFF;
+    margin-right:0.55rem;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.NavBar a:hover {
+    text-decoration: underline;
+}

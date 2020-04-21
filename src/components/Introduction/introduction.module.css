@@ -1,0 +1,37 @@
+.introContainer {
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introBorder {
+    height:100%;
+    width:90%;
+    padding:3rem;
+    border: 1px darkgray solid;
+    border-radius:1rem;
+    box-shadow: 2px 1px 3px darkgray;
+    max-width:750px;
+}
+
+.headerContainer {
+    display:flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+h1 {
+    font-size:2rem;
+}
+
+p {
+    margin-top:16px;
+}
+
+img {
+    max-width:100px;
+    border-radius:100%;
+    min-width:100px;
+}

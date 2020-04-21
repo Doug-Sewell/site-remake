@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Layout from './components/Layout/Layout';
+import Introduction from './components/Introduction/introduction';
+import headshot from './assets/headshot.png';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  state = {
+    introduction: ["Full Stack Developer and IT Professional with experience in object-oriented programming (OOP), Web API’s, frameworks and libraries. Received multiple scholarships related to development and have a variety of development related certifications. Driven, passionate, and love to create and learn.",
+      "Over the last several years, I've learned new languages and frameworks to create modern web and software applications. Using technologies such as Java, Node, React, and others I am thrilled to utilize my skills and passion – building great things with modern technologies."],
+    headshot: headshot
+  }
+
+
+  render() {
+    return (
+      <Layout >
+        <Introduction photo={this.state.headshot} intro={this.state.introduction} />
+        <div>
+          <p>Jobs</p>
+        </div>
+      </Layout>
+    );
+  }
+
 }
 
 export default App;
